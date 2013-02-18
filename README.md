@@ -3,9 +3,9 @@
 Configure desktop notifications inside your gruntfile. Makes 'grunt watch' more fun.
 
 ## Getting Started
-Install this grunt plugin next to your project's [grunt.js gruntfile][getting_started] with: `npm install grunt-growl`
+Install this grunt plugin next to your project's [Gruntfile.js gruntfile][getting_started] with: `npm install grunt-growl`
 
-Then add this line to your project's `grunt.js` gruntfile:
+Then add this line to your project's `Gruntfile.js` gruntfile:
 
 ```javascript
 grunt.loadNpmTasks('grunt-growl');
@@ -28,12 +28,12 @@ This grunt multitask allows you to configure desktop notifications inside your g
 ```javascript
 grunt.initConfig({
     growl : {
-    	myMessage : {
-    		message : "Some message",
-    		title : "Notification Title",
-    		image : __dirname + "/foo.png"
-    	}
-	}	
+      myMessage : {
+        message : "Some message",
+        title : "Notification Title",
+        image : __dirname + "/foo.png"
+      }
+  }  
 });
 
 grunt.loadNpmTasks('grunt-growl');
@@ -53,7 +53,8 @@ If you run 'grunt' you would see something like this:
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt][grunt].
 
 ## Release History
-_(Nothing yet)_
+
+* 0.1.4 - Grunt 0.4 Support
 
 ## License
 Copyright (c) 2012 Alex Tucker  
